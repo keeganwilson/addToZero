@@ -7,10 +7,8 @@ const addToZero = (arr) => {
     let hasOpp = 'False'
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr.length; j++)
-            if (i !== j) {
-                if(arr[i] === -arr[j])
-            hasOpp = 'True'
-        }
+            if(i !== j && arr[i] === -arr[j])
+                hasOpp = 'True'
     }
     console.log(hasOpp)
 }
